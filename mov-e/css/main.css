@@ -1,0 +1,22 @@
+
+
+/*Header Area Section*/
+
+div.header-container {
+    background-image: url("../assets/images/img1.jpg") ;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Products */
+
+i.fa-star, i.fa-star-half-alt {
+    color: #ffbe00;
+}

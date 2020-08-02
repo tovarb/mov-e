@@ -152,7 +152,7 @@ fetch(url3)
         "category_name": "Filtros de Aire",
       */
 
-      const urlQuery = 'https://api.mercadolibre.com/sites/MLC/search?q=${Filtros para Autos y Camionetas}';
+      const urlQuery = 'https://api.mercadolibre.com/sites/MLC/search?q=${Filtros para Autos}';
 
       fetch(urlQuery)
       .then(response => response.json())
@@ -166,31 +166,33 @@ fetch(url3)
             const generalFilterInfo = listItems[info].category_id;
 
             console.log(generalFilterInfo);
+            
+            console.log(listItems[info]);
 
-            if(generalFilterInfo == 'MLC377254' || generalFilterInfo == 'MLC161558' || generalFilterInfo == 'MLC161557' || generalFilterInfo == 'MLC441051'){
-                    console.log(listItems[info]);
+            let title = listItems[info].title;
 
-                    let title = listItems[info].title;
+            let link = listItems[info].permalink;
 
-                    let link = listItems[info].permalink;
+            let price = listItems[info].price;
 
-                    let price = listItems[info].price;
+            let image = listItems[info].thumbnail;
 
-                    let image = listItems[info].thumbnail;
+            if(generalFilterInfo == 'MLC377254' || generalFilterInfo == 'MLC161558' ){
 
 
                     let template = (title, link, price, image) => {
 
-                    let containerInfo = `<div class="cont-info">
-            
-                                                <div class="cont-title"><a href="${link}"> ${title} </a></div>
-            
-                                                <div class="cont-image"><img src="${image} alt="${title}"></div>
-            
-                                                <div class="cont-price">$ ${price}</div>
-            
-                                                <br>
-            
+                    let containerInfo = `<div class="card text-center m-3 mr-5">
+                                            <img src="${image} class="card-img-top" alt="${title}" >
+                                            <div class="card-body">
+                                                    <p class="card-title"><a href="${link}"> ${title} </a></p>
+                                                    <p class="card-text">$ ${price}</p>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                            </div>
                                         </div>`;
 
                     return containerInfo;
@@ -201,6 +203,33 @@ fetch(url3)
 
 
             }
+
+            else if(generalFilterInfo == 'MLC441051' || generalFilterInfo == 'MLC441052' || generalFilterInfo == 'MLC161557'){
+
+
+                let template = (title, link, price, image) => {
+
+                let containerInfo = `<div class="card text-center m-3 mr-5">
+                                        <img src="${image} class="card-img-top" alt="${title}" >
+                                        <div class="card-body">
+                                                <p class="card-title"><a href="${link}"> ${title} </a></p>
+                                                <p class="card-text">$ ${price}</p>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                        </div>
+                                    </div>`;
+
+                return containerInfo;
+        
+            }
+
+            $(".item-container").append(template(title, link, price,image));
+
+
+        }
 
 
         }
