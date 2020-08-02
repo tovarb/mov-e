@@ -1,4 +1,24 @@
+/* Navbar Section*/
 
+.menu {
+    float: right;
+    text-align: right;
+}
+
+.menu li {
+    display: inline-block;
+    height:  56px;
+    padding: 20px 10px;
+}
+
+.menu a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: #c45602;
+}
 
 /*Header Area Section*/
 
@@ -15,9 +35,85 @@ div.header-container {
     align-items: center;
 }
 
+button.buy-now-btn a {
+    color: #000000;
+}
+
+button.buy-now-btn a:hover {
+    text-decoration: none;
+}
+
+/*Test Section*/
+
+div.section-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px 0px;
+
+}
+
+.categories {
+    height: 350px;
+}
+
+/**/
+
+.element-container{
+    background-image: linear-gradient(to bottom right, #f2f4f4, #ffffff);
+    min-height: 300px;
+    max-height: fit-content;
+    margin: 100px 0px;
+}
+
+.fa-award, .fa-plane, .fa-headset {
+    color: #000000;
+    font-size: 50px;
+}
+
+
 
 /*Products */
+
+div.item-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+div.container-product {
+    width: 300px;
+    padding: 20px 10px;
+    margin: 15px;
+    background-color: #f7f8f8;
+}
+
+div.product-body p.title-product{
+    font-size: 13px;
+    padding: 10px 50px;
+}
+
+div.product-body p.title-product a { 
+    color: #000000;
+}
+
+div.product-body p.title-product a:hover {
+    text-decoration: none; 
+    cursor: pointer;
+}
+
 
 i.fa-star, i.fa-star-half-alt {
     color: #ffbe00;
 }
+
+/*Footer*/
+
+footer.copyright-container {
+    padding: 30px 0px;
+    background-color: #000000;
+    color: #ffffff;
+}
+

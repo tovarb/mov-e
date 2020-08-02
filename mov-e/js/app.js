@@ -152,7 +152,7 @@ fetch(url3)
         "category_name": "Filtros de Aire",
       */
 
-      const urlQuery = 'https://api.mercadolibre.com/sites/MLC/search?q=${Filtros para Autos}';
+      const urlQuery = 'https://api.mercadolibre.com/sites/MLC/search?q=${Filtros para Autos}&limit=13';
 
       fetch(urlQuery)
       .then(response => response.json())
@@ -182,16 +182,20 @@ fetch(url3)
 
                     let template = (title, link, price, image) => {
 
-                    let containerInfo = `<div class="card text-center m-3 mr-5">
-                                            <img src="${image} class="card-img-top" alt="${title}" >
-                                            <div class="card-body">
-                                                    <p class="card-title"><a href="${link}"> ${title} </a></p>
-                                                    <p class="card-text">$ ${price}</p>
+                    let containerInfo = `<div class="container-product text-center">
+                                            <a href="${link}"><img src="${image} class="img-product" alt="${title}" ></a>
+                                            <div class="product-body">
+                                                    <p class="title-product"><a href="${link}"> ${title} </a></p>
                                                     <i class="fas fa-star"></i>
                                                     <i class="fas fa-star"></i>
                                                     <i class="fas fa-star"></i>
                                                     <i class="fas fa-star"></i>
                                                     <i class="fas fa-star"></i>
+                                                    <p>$ ${price}</p>
+                                                
+                                                    <i class="fas fa-heart"></i>
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                    <i class="fas fa-eye"></i>
                                             </div>
                                         </div>`;
 
@@ -209,16 +213,20 @@ fetch(url3)
 
                 let template = (title, link, price, image) => {
 
-                let containerInfo = `<div class="card text-center m-3 mr-5">
-                                        <img src="${image} class="card-img-top" alt="${title}" >
-                                        <div class="card-body">
-                                                <p class="card-title"><a href="${link}"> ${title} </a></p>
-                                                <p class="card-text">$ ${price}</p>
+                let containerInfo = `<div class="container-product text-center">
+                                        <a href="${link}"><img src="${image} class="img-product" alt="${title}" ></a>
+                                        <div class="product-body">
+                                                <p class="title-product"><a href="${link}"> ${title} </a></p>
                                                 <i class="fas fa-star"></i>
                                                 <i class="fas fa-star"></i>
                                                 <i class="fas fa-star"></i>
                                                 <i class="fas fa-star"></i>
                                                 <i class="fas fa-star-half-alt"></i>
+                                                <p>$ ${price}</p>
+                                                
+                                                <i class="fas fa-heart"></i>
+                                                <i class="fas fa-shopping-cart"></i>
+                                                <i class="fas fa-eye"></i>
                                         </div>
                                     </div>`;
 

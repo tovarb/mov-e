@@ -13,60 +13,120 @@
 
 <body>
     <!--Navbar Starts-->
-    <nav class="navbar navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">
-            Filtr
-            <i class="fas fa-caret-up"></i>
-        </a>
+    <nav class="navbar navbar-dark bg-dark navbar-collapse row">
+        <div class="col-md-4 col-sm-12">
+            <a class="navbar-brand" href="#">
+                MOV.E
+                <i class="fas fa-caret-up"></i>
+            </a>
+        </div>
+        <div class="col-md-4 col-sm-12 ">
+            <form class="navbar-form navbar-left">
+                <input type="text" class="form-control col-lg-12" placeholder="Buscar filtro">
+            </form>
+        </div>
+        <div class="hide-on-mobile menu col-md-4 col-sm-12">
+            <ul>
+                <li><a href="#"><i class="fas fa-shopping-cart"></i> Cesta</a></li>
+                <li><a href="#"><i class="fas fa-heart"></i> Lista de Deseos</a></li>
+                <li><a href="#"><i class="fas fa-user"></i> Regístrate</a></li>
+            </ul>
+        </div>
     </nav>
     <!--Navbar Ends-->
 
-    <!--Header Area Starts-->
-
+    <!--Header Starts-->
     <div class="header-container text-center">
-        <h1>FILTR</h1>
+        <h1>MOV.E</h1>
         <br>
         <h2>Los mejores filtros <br> para Autos y Camionetas</h2>
         <br>
-        <button type="button" class="btn btn-warning">Comprar ahora</button>
+        <button type="button" class="btn btn-warning buy-now-btn"> <a href="#best-seller-section">Comprar ahora</a></button>
     </div>
 
 
-    <!--Header Area Ends-->
-
+    <!--Header Ends-->
 
     <!--Test area Starts-->
 
-    <div class="banner-area-wrapper banner-mt">
-        <div class="container container-wide">
-            <div class="row">
-                <div class="col-md-6 col-lg-4">
-                    <div class="banner-item">
-                        <div class="banner-item__img"><a href="#"><img src="assets/img/banner/banner-1.jpg"
-                                    alt="Banner"></a></div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="banner-item">
-                        <div class="banner-item__img"><a href="#"><img src="assets/img/banner/banner-2.jpg"
-                                    alt="Banner"></a></div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="banner-item">
-                        <div class="banner-item__img"><a href="#"><img src="assets/img/banner/banner-3.jpg"
-                                    alt="Banner"></a></div>
-                    </div>
-                </div>
-            </div>
+
+
+    <div class="section-container text-center mt-3 mb-5">
+        <div>
+            <img class="categories" src="./assets/images/kits-de-filtros.png" alt="Banner">
+            <h3>Kits de Filtros</h3>
         </div>
+        <div>
+            <img class="categories" src="./assets/images/filtros-de-aceite.png" alt="Banner">
+            <h3>Filtros de Aceite</h3>
+        </div>
+        <div>
+            <img class="categories" src="./assets/images/filtros-de-aire.png" alt="Banner">
+            <h3>Filtros de Aire</h3>
+        </div>
+
     </div>
 
     <!--Test area Ends-->
 
-    <div class="card-columns item-container">
+    <div class="element-container">
+        <div class="call-to-action-area sm-top">
+            <div class="container text-center ">
+                <div class="row">
+                    <div class="col-md-4 col-lg-4 pt-5 pl-3 pr-3">
+                        <div class="call-to-action-item mt-0">
+                            <div class="call-to-action-item__icon">
+                                <i class="fas fa-plane"></i>
+                                <br><br>
+                            </div>
+                            <div class="call-to-action-item__info">
+                                <h3>Envios Gratis</h3>
+                                <p>Tus productos hasta la puerta de tu casa con envío gratis a partir de $30.000 (CLP) de compra.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4 pt-5 pl-3 pr-3">
+                        <div class="call-to-action-item">
+                            <div class="call-to-action-item__icon">
+                                <i class="fas fa-award"></i>
+                                <br><br>
+                            </div>
+                            <div class="call-to-action-item__info">
+                                <h3>Productos de Calidad</h3>
+                                <p>Las mejores marcas con la mejor calidad.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4 pt-5 pl-3 pr-3">
+                        <div class="call-to-action-item">
+                            <div class="call-to-action-item__icon">
+                                <i class="fas fa-headset"></i>
+                                <br><br>
+                            </div>
+                            <div class="call-to-action-item__info">
+                                <h3>Soporte en Línea</h3>
+                                <p>Tus dudas y aclaraciones serán resueltas desde donde estés, con nuestro soporte en línea.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
+
+    <!--Best Sellers Section-->
+    <section id="best-seller-section" class="best-seller text-center">
+        <h2>Los Más Vendidos</h2>
+        <br><br><br>
+        <div class="item-container mb-5">
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="copyright-container text-center">
+        <small>Copyright MOV.E Oficial ©</small>
+    </footer>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
