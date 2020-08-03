@@ -2,7 +2,7 @@
 
 Proyecto - sitio web tipo ecommerce que muestra filtros para autos y camionetas.
 
-**Technologies:**
+**Tecnologías:**
 
 * HTML5
 * CSS
