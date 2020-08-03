@@ -9,6 +9,7 @@
         integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/assets/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="sweetalert2.min.css">
 </head>
 
 <body>
@@ -27,20 +28,20 @@
                         <input type="text" class="form-control col-lg-12 search-input" placeholder="Buscar filtro">
                     </a>
                 </li>
-                <li class="menu-item">
+                <li class="menu-item shopping-cart">
                     <a href="#">
                         <i class="fas fa-shopping-cart icons-menu"></i>
-                        Cesta
+                        Carrito
                     </a>
                 </li>
-                <li class="menu-item">
+                <li class="menu-item wish-list">
                     <a href="#">
                         <i class="fas fa-heart icons-menu"></i>
                         Lista de Deseos
                     </a>
                 </li>
                 <li class="menu-item">
-                    <a href="#">
+                    <a href="#log-in" data-toggle="modal">
                         <i class="fas fa-user icons-menu"></i>
                         Regístrate
                     </a>
@@ -49,6 +50,37 @@
         </div>
     </nav>
     <!--Navbar Ends-->
+        <!--Modal Log In Starts-->
+        <div class="modal fade" id="log-in">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div style="text-decoration: underline; font-weight: bolder;">
+                            <h5>REGÍSTRATE</h5>
+                        </div>
+                        <div>
+                            <h5>INICIA SESIÓN</h5>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Correo Electrónico">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+                            </div>
+                            <button type="submit" class="btn btn-warning">Registrarme</button>
+                        </form>
+                        <small style="font-size: 10px">Al crear una cuenta, aceptas las <a href="#">Condiciones de Uso</a> y el <a href="#">Aviso de Privacidad</a> de MOV.E.</small>
+                    </div>
+                    <div class="modal-footer">
+                        <small id="emailHelp" class="form-text text-muted">¿Ya tienes cuenta? <a class="yellow-color" href="#">Inicia sesión</a>.</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Modal Log In Ends-->
 
     <!--Header Starts-->
     <div class="header-container text-center">
@@ -154,7 +186,10 @@
     <!--Customer Support Starts-->
     <section>
         <div class="text-center customer-service">
-            <img class="whatsapp-logo" src="./assets/images/whatsapp-logo.png" alt="whatsapp-logo"><br>
+            <a href="https://api.whatsapp.com/send?phone=34123456789&text=Hola,%20quisiera%20información%20sobre%20filtros.">
+                <img class="whatsapp-logo" src="./assets/images/whatsapp-logo.png" alt="whatsapp-logo">
+            </a>
+            <br>
             <small class="contact-us">¿Dudas? <br> ¡Contáctanos!</small>
         </div>
     </section>
@@ -172,6 +207,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/assets/bootstrap.min.js"></script>
     <script src="js/app.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+    <script src="sweetalert2.min.js"></script>
 </body>
 
 </html>

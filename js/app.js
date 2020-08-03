@@ -94,4 +94,34 @@
       })
       .catch(err => console.log(err));
 
+      $('.shopping-cart').click(function(){
+
+        Swal.fire({
+            icon: 'info',
+            title: 'Tu carrito de compras esta vacio.',
+            showClass: {
+              popup: 'animate__animated animate__fadeInDown'
+            },
+            hideClass: {
+              popup: 'animate__animated animate__fadeOutUp'
+            }
+          })
+
+      });
+
+      $('.wish-list').click(function(){
+
+        Swal.fire({
+            icon: 'info',
+            title: 'No has agregado productos a tu lista de deseos.',
+            showClass: {
+              popup: 'animate__animated animate__fadeInDown'
+            },
+            hideClass: {
+              popup: 'animate__animated animate__fadeOutUp'
+            }
+          })
+
+      });
+
 
