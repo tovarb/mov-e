@@ -210,7 +210,7 @@ footer.copyright-container {
 @media only screen and (max-width: 425px) {
 
     div.customer-service {
-        bottom: 120px;
+        bottom: 100px;
         right: 30px;
     }
 
