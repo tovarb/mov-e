@@ -48,9 +48,9 @@ button.buy-now-btn a:hover {
     text-decoration: none;
 }
 
-/*Test Section*/
+/*Category Section*/
 
-div.section-container {
+section.section-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -58,11 +58,15 @@ div.section-container {
     padding: 50px 0px;
 }
 
-.categories {
+img.categories {
     height: 350px;
 }
 
-/**/
+div.filter-category:hover {
+    cursor: pointer;
+}
+
+/*Benefits Section*/
 
 .element-container{
     background-image: linear-gradient(to bottom right, #f2f4f4, #ffffff);
@@ -76,9 +80,7 @@ div.section-container {
     font-size: 50px;
 }
 
-
-
-/*Products */
+/*Best Sellers Section*/
 
 div.item-container {
     display: flex;
@@ -128,7 +130,21 @@ i.fa-star, i.fa-star-half-alt {
     color: #ffbe00;
 }
 
-/*Customer Support*/
+/*Newsletter Section*/
+
+section.newsletter-container {
+    margin: 100px 0px;
+}
+
+input.form-newsletter{
+    border-radius: 3px;
+    height: 38px;
+}
+
+.newsletter-content {
+    padding: 0px 30px;
+}
+/*Customer Support Section*/
 
 img.whatsapp-logo {
     height: 80px;
@@ -152,7 +168,10 @@ footer.copyright-container {
     color: #ffffff;
 }
 
+
 /*Media Queries*/
+
+/*Desktop*/
 
 @media only screen and (max-width: 986px) {
 
@@ -173,17 +192,9 @@ footer.copyright-container {
         width: 130px;
     }
 
-
-
-
 }
 
 /*Tablet*/
-@media only screen and (max-width: 768px) {
-
-
-
-}
 
 @media only screen and (max-width: 767px) {
 
@@ -201,6 +212,10 @@ footer.copyright-container {
     div.customer-service {
         bottom: 120px;
         right: 70px;
+    }
+
+    img.categories {
+        height: 250px;
     }
 
 
