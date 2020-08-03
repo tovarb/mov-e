@@ -17,7 +17,7 @@
 }
 
 .menu a:hover {
-    color: #c45602;
+    color: #e72f07;
 }
 
 /*Header Area Section*/
@@ -64,7 +64,7 @@ div.section-container {
     background-image: linear-gradient(to bottom right, #f2f4f4, #ffffff);
     min-height: 300px;
     max-height: fit-content;
-    margin: 100px 0px;
+    margin: 80px 0px;
 }
 
 .fa-award, .fa-plane, .fa-headset {
@@ -104,9 +104,40 @@ div.product-body p.title-product a:hover {
     cursor: pointer;
 }
 
+i.fa-heart, i.fa-shopping-cart, i.fa-eye {
+    padding: 0px 10px;
+}
+
+i.fa-heart:hover {
+    color: #ed0414;
+}
+
+i.fa-shopping-cart:hover {
+    color: #0167ff;
+}
+
+i.fa-eye:hover {
+    color: #9da6aa;
+}
 
 i.fa-star, i.fa-star-half-alt {
     color: #ffbe00;
+}
+
+/*Customer Support*/
+
+img.whatsapp-logo {
+    height: 80px;
+}
+
+div.customer-service {
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+}
+
+small.contact-us {
+    background-color: #ffffff;
 }
 
 /*Footer*/
