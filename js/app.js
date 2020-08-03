@@ -4,7 +4,7 @@
       fetch(urlQuery)
       .then(response => response.json())
       .then(data => {
-          console.log(data);
+          //console.log(data);
 
           const listItems = data.results;
 
@@ -12,9 +12,9 @@
 
             const generalFilterInfo = listItems[info].category_id;
 
-            console.log(generalFilterInfo);
+            //console.log(generalFilterInfo);
             
-            console.log(listItems[info]);
+            //console.log(listItems[info]);
 
             let title = listItems[info].title;
 
