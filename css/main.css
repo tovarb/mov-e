@@ -211,7 +211,7 @@ footer.copyright-container {
 
     div.customer-service {
         bottom: 120px;
-        right: 70px;
+        right: 30px;
     }
 
     img.categories {
@@ -219,4 +219,10 @@ footer.copyright-container {
     }
 
 
+}
+
+@media only screen and (max-width: 352px) {
+    button.suscribe-btn{
+        margin-top: 15px;
+    }
 }
