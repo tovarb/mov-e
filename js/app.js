@@ -193,9 +193,9 @@ fetch(url3)
                                                     <i class="fas fa-star"></i>
                                                     <p>$ ${price}</p>
                                                 
-                                                    <i class="fas fa-heart"></i>
-                                                    <i class="fas fa-shopping-cart"></i>
-                                                    <i class="fas fa-eye"></i>
+                                                    <i class="fas fa-heart product-fa-heart"></i>
+                                                    <i class="fas fa-shopping-cart product-fa-shopping-cart"></i>
+                                                    <i class="fas fa-eye product-fa-eye"></i>
                                             </div>
                                         </div>`;
 
@@ -224,9 +224,9 @@ fetch(url3)
                                                 <i class="fas fa-star-half-alt"></i>
                                                 <p>$ ${price}</p>
                                                 
-                                                <i class="fas fa-heart"></i>
-                                                <i class="fas fa-shopping-cart"></i>
-                                                <i class="fas fa-eye"></i>
+                                                <i class="fas fa-heart product-fa-heart"></i>
+                                                <i class="fas fa-shopping-cart product-fa-shopping-cart"></i>
+                                                <i class="fas fa-eye product-fa-eye"></i>
                                         </div>
                                     </div>`;
 

@@ -108,19 +108,19 @@ div.product-body p.title-product a:hover {
     cursor: pointer;
 }
 
-i.fa-heart, i.fa-shopping-cart, i.fa-eye {
+i.product-fa-heart, i.product-fa-shopping-cart, i.product-fa-eye {
     padding: 0px 10px;
 }
 
-i.fa-heart:hover {
+i.product-fa-heart:hover {
     color: #ed0414;
 }
 
-i.fa-shopping-cart:hover {
+i.product-fa-shopping-cart:hover {
     color: #0167ff;
 }
 
-i.fa-eye:hover {
+i.product-fa-eye:hover {
     color: #9da6aa;
 }
 
