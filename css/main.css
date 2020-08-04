@@ -17,7 +17,7 @@
 }
 
 .menu a:hover {
-    color: #e72f07;
+    text-decoration: underline;
 }
 
 input.search-input {
@@ -116,6 +116,46 @@ div.filter-category:hover {
     cursor: pointer;
 }
 
+.filter-category:hover {
+	-webkit-animation: shadow-drop-2-bottom 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: shadow-drop-2-bottom 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+/**
+ * ----------------------------------------
+ * animation shadow-drop-2-bottom
+ * ----------------------------------------
+ */
+ @-webkit-keyframes shadow-drop-2-bottom {
+    0% {
+      -webkit-transform: translateZ(0) translateY(0);
+              transform: translateZ(0) translateY(0);
+      -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+              box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      -webkit-transform: translateZ(50px) translateY(-12px);
+              transform: translateZ(50px) translateY(-12px);
+      -webkit-box-shadow: 0 12px 20px -12px rgba(0, 0, 0, 0.35);
+              box-shadow: 0 12px 20px -12px rgba(0, 0, 0, 0.35);
+    }
+  }
+  @keyframes shadow-drop-2-bottom {
+    0% {
+      -webkit-transform: translateZ(0) translateY(0);
+              transform: translateZ(0) translateY(0);
+      -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+              box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      -webkit-transform: translateZ(50px) translateY(-12px);
+              transform: translateZ(50px) translateY(-12px);
+      -webkit-box-shadow: 0 12px 20px -12px rgba(0, 0, 0, 0.35);
+              box-shadow: 0 12px 20px -12px rgba(0, 0, 0, 0.35);
+    }
+  }
+  
+
 /*Benefits Section*/
 
 .element-container{
@@ -179,6 +219,78 @@ i.product-fa-eye:hover {
 i.fa-star, i.fa-star-half-alt {
     color: #ffbe00;
 }
+
+.container-product:hover {
+	-webkit-animation: wobble-hor-bottom 0.8s both;
+	animation: wobble-hor-bottom 0.8s both;
+}
+
+/**
+ * ----------------------------------------
+ * animation wobble-hor-bottom
+ * ----------------------------------------
+ */
+ @-webkit-keyframes wobble-hor-bottom {
+    0%,
+    100% {
+      -webkit-transform: translateX(0%);
+              transform: translateX(0%);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+    }
+    15% {
+      -webkit-transform: translateX(-30px) rotate(-6deg);
+              transform: translateX(-30px) rotate(-6deg);
+    }
+    30% {
+      -webkit-transform: translateX(15px) rotate(6deg);
+              transform: translateX(15px) rotate(6deg);
+    }
+    45% {
+      -webkit-transform: translateX(-15px) rotate(-3.6deg);
+              transform: translateX(-15px) rotate(-3.6deg);
+    }
+    60% {
+      -webkit-transform: translateX(9px) rotate(2.4deg);
+              transform: translateX(9px) rotate(2.4deg);
+    }
+    75% {
+      -webkit-transform: translateX(-6px) rotate(-1.2deg);
+              transform: translateX(-6px) rotate(-1.2deg);
+    }
+  }
+  @keyframes wobble-hor-bottom {
+    0%,
+    100% {
+      -webkit-transform: translateX(0%);
+              transform: translateX(0%);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+    }
+    15% {
+      -webkit-transform: translateX(-30px) rotate(-6deg);
+              transform: translateX(-30px) rotate(-6deg);
+    }
+    30% {
+      -webkit-transform: translateX(15px) rotate(6deg);
+              transform: translateX(15px) rotate(6deg);
+    }
+    45% {
+      -webkit-transform: translateX(-15px) rotate(-3.6deg);
+              transform: translateX(-15px) rotate(-3.6deg);
+    }
+    60% {
+      -webkit-transform: translateX(9px) rotate(2.4deg);
+              transform: translateX(9px) rotate(2.4deg);
+    }
+    75% {
+      -webkit-transform: translateX(-6px) rotate(-1.2deg);
+              transform: translateX(-6px) rotate(-1.2deg);
+    }
+  }
+  
+  
+  
 
 /*Newsletter Section*/
 
