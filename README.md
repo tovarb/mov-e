@@ -8,6 +8,7 @@ Proyecto - sitio web tipo ecommerce que muestra filtros para autos y camionetas.
 * CSS
 * JS
 * jQuery
+* API Mercado Libre
 
 
 ## Visualización Sitio
