@@ -1,7 +1,7 @@
+    const proxyurl = "https://cors-anywhere.herokuapp.com/";
+    const url = 'https://api.mercadolibre.com/sites/MLC/search?q=${Filtros para Autos}&limit=13';
 
-      const urlQuery = 'https://api.mercadolibre.com/sites/MLC/search?q=${Filtros para Autos}&limit=13';
-
-      fetch(urlQuery)
+      fetch( proxyurl + url)
       .then(response => response.json())
       .then(data => {
           //console.log(data);
